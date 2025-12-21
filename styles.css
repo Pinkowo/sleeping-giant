@@ -494,6 +494,68 @@ main > section:last-of-type {
   transform: translateY(-4px);
 }
 
+.facility-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-auto-rows: minmax(140px, auto);
+}
+
+.facility-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 14px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(29, 22, 17, 0.08);
+  color: var(--ink);
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-icon {
+  display: inline-block;
+  line-height: 1;
+  transform: scale(1.6);
+  transform-origin: center;
+  font-variation-settings: "opsz" 40, "wght" 500, "FILL" 0, "GRAD" 0;
+  color: var(--accent);
+}
+
+.facility-card:hover {
+  animation: glowPulse 1.6s ease-in-out infinite;
+  box-shadow:
+    0 14px 30px rgba(29, 22, 17, 0.16),
+    0 0 26px rgba(199, 121, 59, 0.28);
+  transform: translateY(-4px);
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      0 10px 24px rgba(29, 22, 17, 0.12),
+      0 0 14px rgba(199, 121, 59, 0.14);
+  }
+  50% {
+    box-shadow:
+      0 16px 34px rgba(29, 22, 17, 0.18),
+      0 0 30px rgba(199, 121, 59, 0.35);
+  }
+  100% {
+    box-shadow:
+      0 10px 24px rgba(29, 22, 17, 0.12),
+      0 0 14px rgba(199, 121, 59, 0.14);
+  }
+}
+
 .cta {
   margin-top: 24px;
   padding: 20px 22px;
@@ -771,6 +833,11 @@ main > section:last-of-type {
   .hero-media img,
   .booking-bar::after {
     animation: none;
+  }
+
+  .facility-card:hover {
+    animation: none;
+    transform: none;
   }
 
   .js .reveal,
