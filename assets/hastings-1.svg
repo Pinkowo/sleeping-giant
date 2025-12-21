@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#a6b6c8" />
+      <stop offset="100%" stop-color="#6e7f92" />
+    </linearGradient>
+    <linearGradient id="land" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d9c6a9" />
+      <stop offset="100%" stop-color="#b0926e" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)" />
+  <rect y="320" width="900" height="280" fill="url(#land)" />
+  <g fill="#8aa07f" opacity="0.8">
+    <circle cx="120" cy="360" r="40" />
+    <circle cx="240" cy="420" r="46" />
+    <circle cx="380" cy="360" r="36" />
+    <circle cx="520" cy="410" r="52" />
+    <circle cx="680" cy="350" r="38" />
+    <circle cx="800" cy="420" r="44" />
+  </g>
+  <text x="450" y="520" text-anchor="middle" font-family="Manrope, Arial" font-size="26" fill="#f6efe6">Hastings orchards</text>
+</svg>
