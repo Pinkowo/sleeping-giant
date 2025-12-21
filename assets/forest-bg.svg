@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="forestSky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1c2a21" />
+      <stop offset="50%" stop-color="#2f4a37" />
+      <stop offset="100%" stop-color="#48634f" />
+    </linearGradient>
+    <linearGradient id="mist" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#304b39" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1c2a21" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#forestSky)" />
+  <rect width="1600" height="1000" fill="url(#mist)" />
+  <g opacity="0.65" fill="#1a2a1f">
+    <polygon points="80,980 160,760 240,980" />
+    <polygon points="260,980 360,700 460,980" />
+    <polygon points="520,980 640,720 760,980" />
+    <polygon points="820,980 920,690 1020,980" />
+    <polygon points="1080,980 1200,740 1320,980" />
+    <polygon points="1340,980 1450,760 1560,980" />
+  </g>
+  <g opacity="0.5" fill="#233629">
+    <polygon points="-40,980 60,820 160,980" />
+    <polygon points="160,980 250,780 340,980" />
+    <polygon points="360,980 460,800 560,980" />
+    <polygon points="600,980 700,760 800,980" />
+    <polygon points="820,980 940,810 1060,980" />
+    <polygon points="1100,980 1220,780 1340,980" />
+    <polygon points="1380,980 1500,820 1620,980" />
+  </g>
+  <g opacity="0.35" fill="#2c4434">
+    <polygon points="40,980 120,860 200,980" />
+    <polygon points="300,980 380,860 460,980" />
+    <polygon points="540,980 620,860 700,980" />
+    <polygon points="780,980 860,860 940,980" />
+    <polygon points="1020,980 1100,860 1180,980" />
+    <polygon points="1260,980 1340,860 1420,980" />
+  </g>
+</svg>

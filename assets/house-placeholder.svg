@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="240" viewBox="0 0 300 240">
+  <rect width="300" height="240" rx="18" fill="#f7eee0" />
+  <rect x="70" y="100" width="160" height="100" fill="#ffffff" stroke="#c9b8a3" stroke-width="4" />
+  <polygon points="60,110 150,40 240,110" fill="#c67233" stroke="#9a4f1f" stroke-width="4" />
+  <rect x="130" y="140" width="40" height="60" fill="#c9b8a3" />
+  <rect x="90" y="125" width="35" height="30" fill="#e6dccf" stroke="#c9b8a3" stroke-width="3" />
+  <rect x="175" y="125" width="35" height="30" fill="#e6dccf" stroke="#c9b8a3" stroke-width="3" />
+  <text x="150" y="220" text-anchor="middle" font-family="Work Sans, Arial" font-size="14" fill="#6b5641">Replace with house photo</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eaded0" />
+      <stop offset="100%" stop-color="#c49375" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g4)" />
+  <rect x="90" y="140" width="420" height="140" rx="18" fill="#ffffff" opacity="0.78" />
+  <polygon points="430,120 500,60 570,120" fill="#f7f1e6" />
+  <text x="300" y="330" text-anchor="middle" font-family="Work Sans, Arial" font-size="22" fill="#4e3524">Gallery 4</text>
+</svg>

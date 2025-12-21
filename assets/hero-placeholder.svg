@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6f8fa4" />
+      <stop offset="60%" stop-color="#4f6c80" />
+      <stop offset="100%" stop-color="#364b5a" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9c8b76" />
+      <stop offset="100%" stop-color="#6e5c4a" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect y="600" width="1600" height="300" fill="url(#ground)" />
+  <rect x="160" y="360" width="1280" height="260" fill="#2b3237" />
+  <rect x="200" y="410" width="360" height="170" fill="#39444b" />
+  <rect x="620" y="410" width="360" height="170" fill="#39444b" />
+  <rect x="1040" y="410" width="360" height="170" fill="#39444b" />
+  <rect x="260" y="460" width="140" height="80" fill="#9aa6ad" />
+  <rect x="700" y="460" width="140" height="80" fill="#9aa6ad" />
+  <rect x="1140" y="460" width="140" height="80" fill="#9aa6ad" />
+  <text x="800" y="820" text-anchor="middle" font-family="Manrope, Arial" font-size="36" fill="#f7f2ea">Replace with hero image</text>
+</svg>
