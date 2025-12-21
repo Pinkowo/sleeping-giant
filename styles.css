@@ -826,6 +826,68 @@ main > section:last-of-type {
   resize: vertical;
 }
 
+.contact-cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 24px;
+}
+
+.contact-owner {
+  margin: 0 0 16px;
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.contact-card {
+  border: 2px solid var(--accent);
+  padding: 22px 18px;
+  text-align: center;
+  background: var(--surface);
+}
+
+.contact-card h3 {
+  margin: 0 0 10px;
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+}
+
+.contact-card p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.contact-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px dotted var(--accent);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 14px;
+  font-weight: 700;
+  color: var(--accent-strong);
+  letter-spacing: 1px;
+}
+
+.contact-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-subtitle {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
 .button {
   padding: 12px 22px;
   border: none;
