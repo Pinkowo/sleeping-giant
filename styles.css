@@ -532,26 +532,22 @@ main > section:last-of-type {
 
 .facility-card:hover {
   animation: glowPulse 1.6s ease-in-out infinite;
-  box-shadow:
-    0 14px 30px rgba(29, 22, 17, 0.16),
+  box-shadow: 0 14px 30px rgba(29, 22, 17, 0.16),
     0 0 26px rgba(199, 121, 59, 0.28);
   transform: translateY(-4px);
 }
 
 @keyframes glowPulse {
   0% {
-    box-shadow:
-      0 10px 24px rgba(29, 22, 17, 0.12),
+    box-shadow: 0 10px 24px rgba(29, 22, 17, 0.12),
       0 0 14px rgba(199, 121, 59, 0.14);
   }
   50% {
-    box-shadow:
-      0 16px 34px rgba(29, 22, 17, 0.18),
+    box-shadow: 0 16px 34px rgba(29, 22, 17, 0.18),
       0 0 30px rgba(199, 121, 59, 0.35);
   }
   100% {
-    box-shadow:
-      0 10px 24px rgba(29, 22, 17, 0.12),
+    box-shadow: 0 10px 24px rgba(29, 22, 17, 0.12),
       0 0 14px rgba(199, 121, 59, 0.14);
   }
 }
@@ -635,13 +631,127 @@ main > section:last-of-type {
 
 .card img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 1.5/1;
   object-fit: cover;
   border-radius: var(--radius-md);
 }
 
+.page-gallery .card img {
+  border-radius: 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+
+.page-gallery .card img:hover {
+  animation: galleryHover 1.8s ease-in-out forwards;
+}
+
 .card-body {
   padding: 8px 0 0;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 12, 10, 0.82);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 9999;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  width: min(1100px, 92vw);
+  max-height: 86vh;
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  transform: scale(0.98);
+  transition: transform 0.4s ease;
+}
+
+.lightbox.is-open .lightbox-content {
+  transform: scale(1);
+}
+
+.lightbox-image {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  background: #111;
+}
+
+.lightbox-caption {
+  margin: 0;
+  color: #f4f1eb;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.32);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+  top: -18px;
+  right: 0;
+}
+
+.lightbox-prev {
+  left: -18px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: -18px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.image-strip {
+  margin-top: 18px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.image-strip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
 }
 
 .price-tag {
@@ -799,6 +909,18 @@ main > section:last-of-type {
   }
 }
 
+@keyframes galleryHover {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -835,6 +957,11 @@ main > section:last-of-type {
     animation: none;
   }
 
+  .page-gallery .card img {
+    animation: none;
+    transition: none;
+  }
+
   .facility-card:hover {
     animation: none;
     transform: none;
@@ -867,6 +994,12 @@ main > section:last-of-type {
 
   .booking-button .button {
     width: 100%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-gallery .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
