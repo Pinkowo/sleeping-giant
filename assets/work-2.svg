@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9bb1c9" />
+      <stop offset="100%" stop-color="#5a6d85" />
+    </linearGradient>
+    <linearGradient id="vine" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#c8b08f" />
+      <stop offset="100%" stop-color="#8f7355" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)" />
+  <rect y="320" width="900" height="280" fill="url(#vine)" />
+  <g fill="#6d8a6c" opacity="0.7">
+    <rect x="60" y="340" width="60" height="200" />
+    <rect x="180" y="340" width="60" height="200" />
+    <rect x="300" y="340" width="60" height="200" />
+    <rect x="420" y="340" width="60" height="200" />
+    <rect x="540" y="340" width="60" height="200" />
+    <rect x="660" y="340" width="60" height="200" />
+    <rect x="780" y="340" width="60" height="200" />
+  </g>
+  <text x="450" y="520" text-anchor="middle" font-family="Manrope, Arial" font-size="26" fill="#f6efe6">Vineyard work</text>
+</svg>
